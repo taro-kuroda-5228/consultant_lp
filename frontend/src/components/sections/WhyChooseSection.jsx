@@ -43,7 +43,7 @@ const WhyChooseSection = () => {
           >
             <div className="relative overflow-hidden rounded-3xl shadow-soft-lg">
               <img 
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d" 
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
                 alt="医師がデータを分析している様子" 
                 className="w-full h-full object-cover"
               />
