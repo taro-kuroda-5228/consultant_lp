@@ -154,7 +154,7 @@ const ServiceSection = () => {
               <div className="absolute -bottom-5 -right-5 w-24 h-24 bg-secondary-100 rounded-full filter blur-xl opacity-70"></div>
               <div className="relative overflow-hidden rounded-2xl shadow-soft-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1526948531399-320e7e40f0ca"
+                  src="https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                   alt="企業と医師のミーティングの様子"
                   className="w-full h-full object-cover"
                 />
