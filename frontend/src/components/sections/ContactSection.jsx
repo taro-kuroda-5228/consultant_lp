@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import ContactForm from '../ui/ContactForm';
 
 const ContactSection = () => {
   const [ref, inView] = useInView({
@@ -86,124 +87,8 @@ const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-soft-lg p-8"
           >
-            <h3 className="text-2xl font-bold mb-6">お問い合わせ</h3>
-            
-            <form>
-              <div className="space-y-6">
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                    会社名 <span className="text-accent-red">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    お名前 <span className="text-accent-red">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    メールアドレス <span className="text-accent-red">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    電話番号
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="inquiry" className="block text-sm font-medium text-gray-700 mb-1">
-                    お問い合わせ内容 <span className="text-accent-red">*</span>
-                  </label>
-                  <select
-                    id="inquiry"
-                    name="inquiry"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    required
-                  >
-                    <option value="">お問い合わせの種類を選択してください</option>
-                    <option value="search">医師探しについて</option>
-                    <option value="service">サービス内容について</option>
-                    <option value="price">料金について</option>
-                    <option value="other">その他</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    メッセージ <span className="text-accent-red">*</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    placeholder="お問い合わせ内容を詳しくお書きください。求める医師の専門性やプロジェクトの概要など、できるだけ具体的にお伝えいただくと、より適切なご提案が可能です。"
-                    required
-                  ></textarea>
-                </div>
-                
-                <div className="flex items-start">
-                  <input
-                    id="privacy"
-                    name="privacy"
-                    type="checkbox"
-                    className="h-5 w-5 rounded border-gray-300 text-primary-600 focus:ring-primary-500 mt-1"
-                    required
-                  />
-                  <label htmlFor="privacy" className="ml-3 text-sm text-gray-700">
-                    <span className="text-accent-red">*</span> プライバシーポリシーに同意します
-                  </label>
-                </div>
-                
-                <div>
-                  <motion.button
-                    type="submit"
-                    className="w-full btn btn-primary btn-lg"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    送信する
-                  </motion.button>
-                </div>
-              </div>
-            </form>
-            
-            <p className="text-sm text-gray-600 mt-6">
-              <span className="text-accent-red">*</span> は必須項目です。送信いただいた内容については、通常24時間以内にご返信いたします。
-            </p>
+            <ContactForm />
           </motion.div>
         </div>
       </div>

@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-white py-12 relative overflow-hidden">
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="col-span-1 md:col-span-2">
             <a href="#" className="flex items-center mb-6">
               <span className="text-2xl font-display font-bold text-white">Dr.<span className="text-secondary-400">サーチ</span></span>
             </a>
             <p className="text-gray-400 mb-4 max-w-md">
-              医師である私が、貴社の戦略的ニーズに合わせて、若手からトップクラスまで最適な医師を直接サーチし、ご紹介する専門コンサルティングサービスです。
+              医師である私たちが、貴社の戦略的ニーズに合わせて、若手からトップクラスまで最適な医師を直接サーチし、ご紹介する専門コンサルティングサービスです。
             </p>
             <p className="text-gray-400">
               医師としての職業倫理に基づき、守秘義務を徹底します。
@@ -28,16 +28,7 @@ const Footer = () => {
               <li><a href="#process" className="text-gray-400 hover:text-white transition-colors">ご利用の流れ</a></li>
               <li><a href="#why-choose" className="text-gray-400 hover:text-white transition-colors">選ばれる理由</a></li>
               <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">料金体系</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">お問い合わせ</h3>
-            <ul className="space-y-2">
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">お問い合わせフォーム</a></li>
-              <li><a href="mailto:info@drsearch-consulting.jp" className="text-gray-400 hover:text-white transition-colors">info@drsearch-consulting.jp</a></li>
-              <li><a href="tel:+81312345678" className="text-gray-400 hover:text-white transition-colors">03-1234-5678</a></li>
-              <li><span className="text-gray-400">受付時間: 平日 9:00-18:00</span></li>
+              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">お問い合わせ</a></li>
             </ul>
           </div>
         </div>
